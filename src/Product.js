@@ -8,7 +8,7 @@ export default class Product extends Component {
 
         return (
             <li className='product'>
-                {title} - {weight}kg - {width}cm * {length}cm * {height}cm
+                {title} - {weight}g - {width}cm * {length}cm * {height}cm
             </li>
         )
     }
