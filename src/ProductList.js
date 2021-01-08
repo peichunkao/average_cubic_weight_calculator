@@ -53,7 +53,7 @@ export default class ProductList extends Component {
         }
 
         if(filteredProducts.length !== 0) {
-            averageCubicWeight = filteredProducts.reduce(reducer, 0).toFixed(2)
+            averageCubicWeight = filteredProducts.reduce(reducer, 0).toFixed(2) / filteredProducts.length
         }
 
         return (
