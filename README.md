@@ -1,6 +1,4 @@
-## Project Name
-
-Kogan - Average Cubic Weight Calculator
+## Kogan - Average Cubic Weight Calculator
 #### Author
 
 Steven Kao
@@ -11,7 +9,7 @@ Steven Kao
 
 #### Language
 
-JavaScript,
+JavaScript, React
 ## Setup Instructions
 
 1. `$ yarn install` or `$ npm install` to install the `node_modules`
