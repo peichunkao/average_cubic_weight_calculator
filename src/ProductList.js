@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Product from './Product';
+import './ProductList.css';
 
 const APIURL = 'http://wp8m3he1wt.s3-website-ap-southeast-2.amazonaws.com/api/products/1';
 const CONVERSION_FACTOR = 250;
@@ -52,16 +53,17 @@ export default class ProductList extends Component {
         }
 
         if(filteredProducts.length !== 0) {
-            averageCubicWeight = Math.round(filteredProducts.reduce(reducer, 0), 6)
+            averageCubicWeight = filteredProducts.reduce(reducer, 0).toFixed(2)
         }
 
         return (
             <div>
-                <h1>{category}</h1>
-                <ul>
+                <h1>Category - <span>{category}</span></h1>
+                <p className='subtitle'>Average cubic weight calculator built with React</p>
+                <ul className='list'>
                     {productItems}
                 </ul>
-                <h2>Average Cubic Weight: {averageCubicWeight}</h2>
+                <h2>Average Cubic Weight: {averageCubicWeight}kg</h2>
             </div>
         )
     }
